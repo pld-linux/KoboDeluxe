@@ -1,0 +1,12 @@
+diff -u v1/configure.in v2/configure.in
+--- v1/configure.in	Mon Nov 24 22:38:53 2003
++++ v2/configure.in	Mon Nov 24 22:38:44 2003
+@@ -33,7 +33,7 @@
+ build_simple_bundle=no
+ unix_scoredir=yes
+ DATADIR='$(datadir)/games/kobo-deluxe'
+-SCOREDIR='$(prefix)/games/kobo-deluxe/scores'
++SCOREDIR='/var/games/kobo-deluxe/scores'
+ CONFIGDIR='HOME>>'
+ CONFIGFILE='.kobodlrc'
+ EXEFILE=kobodl
