@@ -1,4 +1,4 @@
-# $Revision: 1.2 $, $Dat: 2003/08/04 19:06:42 $
+# $Revision: 1.3 $, $Dat: 2003/08/04 19:06:42 $
 Summary:	A third person scrolling 2D shooter
 Summary(pl):	Prosta strzelanka 2D
 Name:		KoboDeluxe
@@ -66,7 +66,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc ChangeLog COPYING COPYING.LIB README README.jp README.sfont README.xkobo README.xkobo.jp TODO
+%doc ChangeLog COPYING.LIB README README.jp README.sfont README.xkobo README.xkobo.jp TODO
 %attr(2755,root,games) %{_bindir}/kobodl
 %dir /var/games/kobo-deluxe
 %dir %attr(775,root,games) /var/games/kobo-deluxe/scores
