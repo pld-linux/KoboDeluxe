@@ -1,4 +1,4 @@
-# $Revision: 1.4 $, $Dat: 2003/08/04 19:06:42 $
+# $Revision: 1.5 $, $Dat: 2003/08/04 19:06:42 $
 Summary:	A third person scrolling 2D shooter
 Summary(pl):	Prosta strzelanka 2D
 Name:		KoboDeluxe
@@ -53,8 +53,6 @@ potrzebujesz ró¿nych taktyk.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-# create directories if necessary
-#install -d $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
