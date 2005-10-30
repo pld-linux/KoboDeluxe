@@ -1,18 +1,17 @@
-# $Revision: 1.7 $, $Dat: 2003/08/04 19:06:42 $
+# $Revision: 1.8 $, $Dat: 2003/08/04 19:06:42 $
 Summary:	A third person scrolling 2D shooter
 Summary(pl):	Prosta strzelanka 2D
 Name:		KoboDeluxe
 Version:	0.4
-%define	_pre	pre8
+%define	_pre	pre10
 Release:	0.%{_pre}.1
 Epoch:		1
 License:	GPL, partially LGPL
 Group:		X11/Aplications/Games
 #Source0Download: http://olofson.net/kobodl/download.html
 Source0:	http://olofson.net/kobodl/download/%{name}-%{version}%{_pre}.tar.gz
-# Source0-md5:	215fba14e30755940833dc1abb322bd6
+# Source0-md5:	6c075837ae680bf5490c1fc4279dcc8b
 Patch0:		kobousr2var.patch
-Patch1:		%{name}-va.patch
 URL:		http://olofson.net/kobodl/
 BuildRequires:	SDL-devel >= 1.2
 BuildRequires:	SDL_image-devel >= 1.2
@@ -44,7 +43,6 @@ potrzebujesz ró¿nych taktyk.
 %prep
 %setup -q -n %{name}-%{version}%{_pre}
 %patch0 -p1
-%patch1 -p1
 
 %build
 %{__libtoolize}
@@ -68,6 +66,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc ChangeLog COPYING.LIB README README.jp README.sfont README.xkobo README.xkobo.jp TODO
 %attr(2755,root,games) %{_bindir}/kobodl
+%{_prefix}/share/games/kobo-deluxe
 %dir /var/games/kobo-deluxe
 %dir %attr(775,root,games) /var/games/kobo-deluxe/scores
-%{_prefix}/share/games/kobo-deluxe
+%{_mandir}/man6/kobodl.6*
