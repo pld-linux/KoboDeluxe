@@ -1,0 +1,29 @@
+--- KoboDeluxe-0.4pre8/eel/e_getargs.c.orig	2002-04-22 10:05:35.000000000 +0200
++++ KoboDeluxe-0.4pre8/eel/e_getargs.c	2005-10-30 22:01:17.000000000 +0100
+@@ -604,7 +604,7 @@
+ 
+ 	eel_current.arg = 1;
+ 
+-	args_tipple_start = args;	/* Warning supressor... */
++	va_copy(args_tipple_start, args);	/* Warning supressor... */
+ 	while(got < argc)
+ 	{
+ 		eel_data_t *a = argv + got;
+@@ -636,7 +636,7 @@
+ 			++fmt;
+ 			using_tipple = 1;
+ 			tipple_start = fmt;
+-			args_tipple_start = args;
++			va_copy(args_tipple_start, args);
+ 			continue;
+ 		  case '>':
+ 			/* Argument tipple end */
+@@ -648,7 +648,7 @@
+ 				return -1;
+ 			}
+ 			fmt = tipple_start;
+-			args = args_tipple_start;
++			va_copy(args, args_tipple_start);
+ 			++tipple;
+ 			continue;
+ 		  case '[':
