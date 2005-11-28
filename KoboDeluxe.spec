@@ -1,4 +1,4 @@
-# $Revision: 1.8 $, $Dat: 2003/08/04 19:06:42 $
+# $Revision: 1.9 $, $Dat: 2003/08/04 19:06:42 $
 Summary:	A third person scrolling 2D shooter
 Summary(pl):	Prosta strzelanka 2D
 Name:		KoboDeluxe
@@ -7,7 +7,7 @@ Version:	0.4
 Release:	0.%{_pre}.1
 Epoch:		1
 License:	GPL, partially LGPL
-Group:		X11/Aplications/Games
+Group:		X11/Applications/Games
 #Source0Download: http://olofson.net/kobodl/download.html
 Source0:	http://olofson.net/kobodl/download/%{name}-%{version}%{_pre}.tar.gz
 # Source0-md5:	6c075837ae680bf5490c1fc4279dcc8b
