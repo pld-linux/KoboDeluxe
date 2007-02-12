@@ -1,6 +1,6 @@
-# $Revision: 1.10 $, $Dat: 2003/08/04 19:06:42 $
+# $Revision: 1.11 $, $Dat: 2003/08/04 19:06:42 $
 Summary:	A third person scrolling 2D shooter
-Summary(pl.UTF-8):   Prosta strzelanka 2D
+Summary(pl.UTF-8):	Prosta strzelanka 2D
 Name:		KoboDeluxe
 Version:	0.4
 %define	_pre	pre10
