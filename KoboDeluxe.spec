@@ -1,6 +1,6 @@
-# $Revision: 1.9 $, $Dat: 2003/08/04 19:06:42 $
+# $Revision: 1.10 $, $Dat: 2003/08/04 19:06:42 $
 Summary:	A third person scrolling 2D shooter
-Summary(pl):	Prosta strzelanka 2D
+Summary(pl.UTF-8):   Prosta strzelanka 2D
 Name:		KoboDeluxe
 Version:	0.4
 %define	_pre	pre10
@@ -30,15 +30,15 @@ labyrinth shaped bases.  There are 50 action packed levels with
 smoothly increasing difficulty, and different combinations of enemies
 that require different tactics to be dealt with successfully.
 
-%description -l pl
-Kobo Deluxe jest gr± 2D typu 3'rd person perspective z prostym
+%description -l pl.UTF-8
+Kobo Deluxe jest grÄ… 2D typu 3'rd person perspective z prostym
 systemem sterowania. W grze tej twoim zadaniem jest pokonanie masy
-atakuj±cych ciê nieprzyjacielskich statków, które do ciebie strzelaj±,
-otaczaj± ciê czy wrêcz nasy³aj± na ciebie inne statki, kiedy ty
-starasz siê zniszczyæ bazy w kszta³cie labiryntu. Czekana ciebie 50
-etapów pe³nych wartkiej akcji, ze stopniowo zwiêkszaj±cym siê stopniem
-trudno¶ci i ró¿nymi typami nieprzyjació³ do których pokonania
-potrzebujesz ró¿nych taktyk.
+atakujÄ…cych ciÄ™ nieprzyjacielskich statkÃ³w, ktÃ³re do ciebie strzelajÄ…,
+otaczajÄ… ciÄ™ czy wrÄ™cz nasyÅ‚ajÄ… na ciebie inne statki, kiedy ty
+starasz siÄ™ zniszczyÄ‡ bazy w ksztaÅ‚cie labiryntu. Czekana ciebie 50
+etapÃ³w peÅ‚nych wartkiej akcji, ze stopniowo zwiÄ™kszajÄ…cym siÄ™ stopniem
+trudnoÅ›ci i rÃ³Å¼nymi typami nieprzyjaciÃ³Å‚ do ktÃ³rych pokonania
+potrzebujesz rÃ³Å¼nych taktyk.
 
 %prep
 %setup -q -n %{name}-%{version}%{_pre}
