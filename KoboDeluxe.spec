@@ -1,9 +1,9 @@
-# $Revision: 1.12 $, $Dat: 2003/08/04 19:06:42 $
+# $Revision: 1.13 $, $Dat: 2003/08/04 19:06:42 $
 Summary:	A third person scrolling 2D shooter
 Summary(pl.UTF-8):	Prosta strzelanka 2D
 Name:		KoboDeluxe
 Version:	0.5.1
-Release:	0.1
+Release:	1
 Epoch:		1
 License:	GPL, partially LGPL
 Group:		X11/Applications/Games
@@ -49,7 +49,8 @@ potrzebujesz różnych taktyk.
 %{__autoconf}
 %{__autoheader}
 %{__automake}
-%configure
+%configure \
+	--datadir=%{_datadir}/games/kobo-deluxe
 %{__make}
 
 %install
