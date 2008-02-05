@@ -4,8 +4,8 @@ diff -u v1/configure.in v2/configure.in
 @@ -33,7 +33,7 @@
  build_simple_bundle=no
  unix_scoredir=yes
- DATADIR='$(datadir)/games/kobo-deluxe'
--SCOREDIR='$(prefix)/games/kobo-deluxe/scores'
+ DATADIR='$(datadir)/kobo-deluxe'
+-SCOREDIR='$(sharedstatedir)/kobo-deluxe/scores'
 +SCOREDIR='/var/games/kobo-deluxe/scores'
  CONFIGDIR='HOME>>'
  CONFIGFILE='.kobodlrc'
