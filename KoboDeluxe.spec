@@ -1,4 +1,4 @@
-# $Revision: 1.13 $, $Dat: 2003/08/04 19:06:42 $
+# $Revision: 1.14 $, $Dat: 2003/08/04 19:06:42 $
 Summary:	A third person scrolling 2D shooter
 Summary(pl.UTF-8):	Prosta strzelanka 2D
 Name:		KoboDeluxe
@@ -11,6 +11,8 @@ Group:		X11/Applications/Games
 Source0:	http://olofson.net/kobodl/download/%{name}-%{version}.tar.bz2
 # Source0-md5:	cb5dcdaf07ccad18a921058138dedc4a
 Patch0:		kobousr2var.patch
+Patch1:		gcc44.patch
+Patch2:		nostd_pipe2.patch
 URL:		http://olofson.net/kobodl/
 BuildRequires:	SDL-devel >= 1.2
 BuildRequires:	SDL_image-devel >= 1.2
@@ -42,6 +44,8 @@ potrzebujesz różnych taktyk.
 %prep
 %setup -q
 %patch0 -p1
+%patch1 -p1
+%patch2 -p1
 
 %build
 %{__libtoolize}
