@@ -1,4 +1,3 @@
-# $Revision: 1.14 $, $Dat: 2003/08/04 19:06:42 $
 Summary:	A third person scrolling 2D shooter
 Summary(pl.UTF-8):	Prosta strzelanka 2D
 Name:		KoboDeluxe
@@ -27,7 +26,7 @@ Kobo Deluxe is a 3'rd person scrolling 2D shooter with a simple and
 responsive control system - which you'll need to tackle the tons of
 enemy ships that shoot at you, chase you, circle around you shooting,
 or even launch other ships at you, while you're trying to destroy the
-labyrinth shaped bases.  There are 50 action packed levels with
+labyrinth shaped bases. There are 50 action packed levels with
 smoothly increasing difficulty, and different combinations of enemies
 that require different tactics to be dealt with successfully.
 
@@ -70,7 +69,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc ChangeLog COPYING.LIB README README.jp README.sfont README.xkobo README.xkobo.jp TODO
 %attr(2755,root,games) %{_bindir}/kobodl
-%{_prefix}/share/games/kobo-deluxe
+%{_datadir}/games/kobo-deluxe
 %dir /var/games/kobo-deluxe
 %dir %attr(775,root,games) /var/games/kobo-deluxe/scores
 %{_mandir}/man6/kobodl.6*
